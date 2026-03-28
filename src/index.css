@@ -1,0 +1,195 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  background: #f5f5f5;
+  color: #1a1a1a;
+  line-height: 1.5;
+}
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+h1 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #555;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-section {
+  margin-bottom: 2rem;
+}
+
+.vin-form {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.vin-input {
+  flex: 1;
+  padding: 0.6rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+}
+
+.vin-input:focus {
+  border-color: #1a1a1a;
+}
+
+.vin-button {
+  padding: 0.6rem 1.25rem;
+  font-size: 1rem;
+  background: #1a1a1a;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.vin-button:hover {
+  background: #333;
+}
+
+.error {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+  color: #c0392b;
+}
+
+.history-section {
+  margin-bottom: 2rem;
+}
+
+.history-list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.history-item {
+  padding: 0.35rem 0.75rem;
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 20px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  font-family: monospace;
+}
+
+.history-item:hover {
+  border-color: #1a1a1a;
+}
+
+.results-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #e0e0e0;
+}
+
+.results-table th,
+.results-table td {
+  padding: 0.6rem 1rem;
+  text-align: left;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0.9rem;
+}
+
+.results-table th {
+  background: #fafafa;
+  font-weight: 600;
+  color: #555;
+}
+
+.results-table tr:last-child td {
+  border-bottom: none;
+}
+
+@media (max-width: 480px) {
+  
+  .container {
+    padding: 1rem 1rem;
+  }
+
+  .vin-form {
+    flex-direction: column;
+  }
+
+  .vin-button {
+    width: 100%;
+  }
+}
+
+nav {
+  display: flex;
+  gap: 6rem;
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #1a1a1a;
+  font-size: 1.5rem;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+.VIN-card {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+}
+
+.VIN-card:hover {
+  background: #fafafa;
+}
+
+.variable-card {
+  padding: 1rem;
+  border-bottom: 1px solid #e0e0e0;
+  cursor: pointer;
+  color: #333;
+  transition: border-color 0.2s ease;
+}
+
+.variable-card:hover {
+  background: #f5f5f5;
+  border-left: 3px solid #1a1a1a;
+}
+
+.variable-list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.variable-list li {
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e0e0e0;
+}
